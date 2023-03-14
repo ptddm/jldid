@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogja Lantai Dua Digital Agency</title>
+    <style>
+        body {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(248, 248, 248);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1em;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h5 {
+    display: block;
+    font-size: 0.67em;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw0aXpsog.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+
+  /* icon-box */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw9aXpsog.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+
+  /* vietnamese */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw2aXpsog.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw3aXpsog.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aXo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+.section1 {
+    background-image: linear-gradient(to right top, #a16680, #9d4f85, #8e3c91, #6f30a3, #212fb7);
+    text-align: center;
+}
+.section1 h1 {
+    margin: 50px auto 0;
+    background-color: #ffffff;
+    border-radius: 50px;
+    max-width: 200px;
+    color: #a16680;
+}
+.section1 h2 {
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgb(67, 22, 192);
+    color: #ffffff;
+}
+.hero {
+    max-width: 90%;
+    border: 5px solid #ffffff;
+    border-radius: 35px;
+}
+
+.section1 p {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.section2 {
+    text-align: center;
+}
+
+.section2 p {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.section2 img {
+    width: 100%;
+}
+
+.section2 h1 {
+    font-size: 45px;
+
+}
+
+.section2-icon-box {
+    display: block;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px 20px 50px 10px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+.section2-icon-box-title {
+    text-align: center;
+    color: #212fb7;
+}
+
+.section2-icon-box-icon {
+    float: left;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.section2-icon-box-desc {
+    text-align: left;
+    font-size: 15px;
+    padding: 3px;
+}
+
+.section3 {
+    background-image: linear-gradient(to top, #9e5a66, #b06c72, #c27f80, #d4928d, #e5a69c);
+    text-align: center;
+    padding: 10px;
+    color: #FFF;
+}
+
+.section3-box {
+    background-color: #733d62;
+    padding: 1px 20px;
+    margin: 15px;
+    border-radius: 40px;
+}
+
+.section4 {
+    color: #FFF;
+    text-align: center;
+    background-image: linear-gradient(to top, #733d62, #7f4463, #8b4b65, #955366, #9f5b67);
+    padding-bottom: 50px;
+}
+
+.section4-title {
+    background-color: #733d62;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+.section4-box-title {
+    background-color: #733d62;
+    padding: 1px 10px;
+    margin: 15px;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+.section4-box-desc {
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.section5 {
+ display: block;
+ text-align: center;
+}
+
+.section5-title h1 {
+    background: linear-gradient(to top, #733d62, #7f4463, #8b4b65, #955366, #9f5b67);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 40px 20px;
+}
+
+.section5-iconbox {
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px:
+}
+
+.section5-icon {
+    padding-top: 10px;
+}
+
+.section5-icon-desc {
+    padding: 0 20px 20px;
+}
+
+.section6-grid {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.section6-title {
+    margin: 60px 20px 20px;
+}
+
+.section6-grid img {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.section7-title {
+    margin: 60px 20px 20px;
+}
+
+.section7-box-1 {
+    background: rgb(2, 0, 133);
+    color: white;
+    background-image:
+    linear-gradient(90deg, rgb(14, 11, 179) 0%, rgb(68, 134, 173) 47%, rgba(255,255,255,0) 81%),
+    url('https://res.cloudinary.com/ddv/image/upload/v1658286488/JLD/facebook-ads.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    padding: 50px 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 5px;
+}
+
+.section7-box-2 {
+    background: rgb(0, 133, 18);
+    color: white;
+    background-image:
+    linear-gradient(90deg, rgb(27, 133, 0) 0%, rgb(71, 173, 68) 47%, rgba(255,255,255,0) 81%),
+    url('https://res.cloudinary.com/ddv/image/upload/v1658288577/JLD/google-ads.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    padding: 50px 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 5px;
+}
+
+.section7-box-3 {
+    background: rgb(124, 133, 0);
+    color: white;
+    background-image:
+    linear-gradient(90deg, rgb(124, 133, 0) 0%, rgb(173, 154, 68) 47%, rgba(255,255,255,0) 81%),
+    url('https://res.cloudinary.com/ddv/image/upload/v1658288709/JLD/website.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    padding: 50px 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 5px;
+}
+
+.section7-box-4 {
+    background: rgb(79,0,133);
+    color: white;
+    background-image:
+    linear-gradient(90deg, rgba(79,0,133,1) 0%, rgba(131,68,173,1) 47%, rgba(255,255,255,0) 81%),
+    url('https://res.cloudinary.com/ddv/image/upload/v1658288789/JLD/kelola-web.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    padding: 50px 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 5px;
+}
+
+.section7-box-5 {
+    background: rgb(79,0,133);
+    color: white;
+    background-image:
+    linear-gradient(90deg, rgb(133, 0, 55) 0%, rgb(173, 68, 147)47%, rgba(255,255,255,0) 81%),
+    url('https://res.cloudinary.com/ddv/image/upload/v1658288922/JLD/instagram.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    padding: 50px 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 5px;
+}
+
+.section7-box-6 {
+    background: rgb(79,0,133);
+    color: white;
+    background-image:
+    linear-gradient(90deg, rgb(236, 98, 5) 0%, rgb(190, 92, 27)47%, rgba(255,255,255,0) 81%),
+    url('https://res.cloudinary.com/ddv/image/upload/v1658289019/JLD/Digital-Marketing.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    padding: 50px 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 5px;
+    margin-bottom: 80px;
+}
+
+.button {
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #0cbc87;
+    border-radius: 5px;
+    border: 2px solid #16b686;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section8 h1 {
+    margin-top: 60px;
+}
+
+.section9 h1 {
+    margin-top: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section10 h1 {
+    margin-top: 60px;
+}
+
+.section10-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.section10-grid img {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.section11 h1 {
+    margin-top: 60px;
+}
+
+.section12 h1 {
+    margin-top: 60px;
+}
+
+.section13 h2 {
+    margin-top: 60px;
+}
+
+.section14 h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.section15 {
+    background-image: linear-gradient(to right top, #a16680, #9d4f85, #8e3c91, #6f30a3, #212fb7);
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+.section15 p {
+    color: #ffffff;
+    font-size: 25px;
+}
+.section15 h2 {
+    font-size: 30px;
+    margin: 20px;
+    padding: 5px;
+    color: #4317aa;
+    background-color: #ffffff;
+    text-shadow: #4317aa 2px 0px;
+    border-radius: 50px;
+}
+
+.section15 h3 {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.accordion {
+    background-color: rgb(239, 250, 255);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: bold;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(213, 237, 248); 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+    margin-top: 7px;
+}
+    </style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TKWG226');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKWG226"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrapper">
+    <main>
+        <div class="section1">
+                <a href="/"><img class="logo" src="https://res.cloudinary.com/ddv/image/upload/v1657944427/JLD/logo.webp" alt=""></a>
+                <h1>ALL IN ONE</h1>
+                <h2>DIGITAL<br>MARKETING</h2>
+                <img class="hero" src="https://res.cloudinary.com/ddv/image/upload/v1657951139/JLD/hero.webp" alt="">
+                <p>Siap Bantu Bisnismu<br>Jadi Makin Amazing</p>
+                <img src="https://res.cloudinary.com/ddv/image/upload/v1657953538/JLD/icon-star.png" alt="">
+                <img src="https://res.cloudinary.com/ddv/image/upload/v1657953538/JLD/icon-star.png" alt="">
+                <img src="https://res.cloudinary.com/ddv/image/upload/v1657953538/JLD/icon-star.png" alt="">
+                <img src="https://res.cloudinary.com/ddv/image/upload/v1657953538/JLD/icon-star.png" alt="">
+                <img src="https://res.cloudinary.com/ddv/image/upload/v1657953538/JLD/icon-star.png" alt="">
+        </div>
+         <div class="section2">
+                <p>Pernah stalking kompetitor yang awal bisnis nya biasa aja, eh nggak lama langsung meroket</p>
+                <img src="https://res.cloudinary.com/ddv/image/upload/v1658108544/JLD/image_2.webp" alt="">
+                <p>Bukan pakai itu, tapi pakai</p>
+                <h1>DIGITAL MARKETING</h1>
+         </div>
+        <div class="section2-icon-box">
+                <h2 class="section2-icon-box-title">Mau tahu untungnya bisnis kalau pakai digital marketing? Tengoklah ini</h2>
+                <div>
+                        <img class="section2-icon-box-icon" src="https://res.cloudinary.com/ddv/image/upload/v1658109408/JLD/icon-check.png" alt="">
+                        <p class="section2-icon-box-desc">Hemat biaya promosi</p>
+                </div>
+                <div>
+                        <img class="section2-icon-box-icon" src="https://res.cloudinary.com/ddv/image/upload/v1658109408/JLD/icon-check.png" alt="">
+                        <p class="section2-icon-box-desc">Bisa menjangkau target pasar lebih luas</p>
+                </div>
+                <div>
+                        <img class="section2-icon-box-icon" src="https://res.cloudinary.com/ddv/image/upload/v1658109408/JLD/icon-check.png" alt="">
+                        <p class="section2-icon-box-desc">Membantu meningkatkan penjualan</p>
+                </div>
+                <div>
+                        <img class="section2-icon-box-icon" src="https://res.cloudinary.com/ddv/image/upload/v1658109408/JLD/icon-check.png" alt="">
+                        <p class="section2-icon-box-desc">Data lebih akurat dan cepat</p>
+                </div>
+                <div>
+                        <img class="section2-icon-box-icon" src="https://res.cloudinary.com/ddv/image/upload/v1658109408/JLD/icon-check.png" alt="">
+                        <p class="section2-icon-box-desc">Membangun komunikasi yang baik dengan pelanggan</p>
+                </div>
+        </div>
+        <div class="section3">
+            <h1>Nah, Buat Bisnis Yang Sering Banget Mengalami Kejadian Kaya Gini</h1>
+            <div class="section3-box">
+                <p>Bingung riset online</p>
+            </div>
+            <div class="section3-box">
+                <p>Gagal bikin strategi bisnis</p>
+            </div>
+            <div class="section3-box">
+                <p>Kurang paham trend digital marketing</p>
+            </div>
+            <div class="section3-box">
+                <p>Tidak paham digital marketing</p>
+            </div>
+            <div class="section3-box">
+                <p>Kurang puas konsultasi digital marketing</p>
+            </div>
+            <h1>Sudah Saatnya memakai Jasa Dari Perusahaan Digital Marketing</h1>
+            <img src="https://res.cloudinary.com/ddv/image/upload/v1657944427/JLD/logo.webp" alt="">
+        </div>
+        <div class="section4">
+            <div class="section4-title">
+                <h2>
+                    Kenapa Harus Pakai Jasa Digital Marketing JLD Digital Agency
+                </h2>
+            </div>
+            <div class="section4-box">
+                <div class="section4-box-title">
+                    <h3>
+                        Tahu Trend Baru Digital Marketing
+                    </h3>
+                </div>
+                <div class="section4-box-desc">
+                    <p>
+                        Dari waktu ke waktu, trend digital marketing mengalami perkembangan. Bekerja sama dengan kami maka bisnis akan selalu upgrade dalam pemakaian strategi digital marketing
+                    </p>
+                </div>
+                <div class="section4-box-title">
+                    <h3>
+                        Jasa Digital Marketing Beragam
+                    </h3>
+                </div>
+                <div class="section4-box-desc">
+                    <p>
+                        Beragam layanan jasa digital marketing bisa kami penuhi demi kebutuhan teknik marketing klien
+                    </p>
+                </div>
+                <div class="section4-box-title">
+                    <h3>
+                        Tim Yang Sudah Berpengalaman
+                    </h3>
+                </div>
+                <div class="section4-box-desc">
+                    <p>
+                        Kami memiliki 60+ staff berpengalaman dan tentunya bisa diandalkan. Juga full support dari customer service
+                    </p>
+                </div>
+                <div class="section4-box-title">
+                    <h3>
+                        Laporan Hasil Digital Marketing
+                    </h3>
+                </div>
+                <div class="section4-box-desc">
+                    <p>
+                        Untuk setiap layanan jasa yang dipilih oleh klien, pihak kami akan selalu memberikan laporan hasil teknik yang sudah diterapkan dan progress pengerjaan
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section5">
+            <div class="section5-title">
+                <h1>Benefit Yang Bisa Didapatkan di JLD Digital Agency</h1>
+            </div>
+            <div class="section5-iconbox">
+                <div class="section5-icon">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658122759/JLD/icon-efektif.png" alt="">
+                </div>
+                <div class="section5-icon-title">
+                    <h3>
+                        Lebih Efisien dan Efektif
+                    </h3>
+                </div>
+                <div class="section5-icon-desc">
+                    <p>
+                        Dibandingkan harus menerapkan sendiri teknik digital marketing yang butuh trial dan error. Memanfaatkan layanan dari kami akan jadi lebih efektif
+                    </p>
+                </div>
+            </div>
+            <div class="section5-iconbox">
+                <div class="section5-icon">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658124502/JLD/icons8-ask-question-64.png" alt="">
+                </div>
+                <div class="section5-icon-title">
+                    <h3>
+                        Gratis Konsultasi
+                    </h3>
+                </div>
+                <div class="section5-icon-desc">
+                    <p>
+                        Sebelum masuk ke tahap kerjasama dan pengerjaan. Klien bisa dengan bebas meyuarakan hal-hal yang masih mengganjal
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section5-iconbox">
+                <div class="section5-icon">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658124870/JLD/icon-growth.png" alt="">
+                </div>
+                <div class="section5-icon-title">
+                    <h3>
+                        Hasil yang Maksimal
+                    </h3>
+                </div>
+                <div class="section5-icon-desc">
+                    <p>
+                        Karena ditangani oleh tim berpengalaman tentu hasil akhir dan proses pengerjaan akan maksimal dan bisa dipertanggung-jawabkan
+                    </p>
+                </div>
+            </div>
+
+            <div class="section5-iconbox">
+                <div class="section5-icon">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658125053/JLD/icons8-cost.png" alt="">
+                </div>
+                <div class="section5-icon-title">
+                    <h3>
+                        Biaya Jasa Terjangkau
+                    </h3>
+                </div>
+                <div class="section5-icon-desc">
+                    <p>
+                        Klien akan mendapatkan biaya terjangkau dengan hasil yang maksimal. Inilahyang membuat kami selalu menjadi pilihan.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section6">
+                <h1 class="section6-title">Galeri Perusahaan</h1>
+                <div class="section6-grid">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658197526/JLD/galeri_1.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658197526/JLD/galeri_3.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658197526/JLD/galeri_2.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658197526/JLD/galeri_4.webp" alt="">
+                </div>
+            </div>
+
+            <div class="section7">
+                <h1 class="section7-title">Jasa Yang Kami Kerjakan</h1>
+                <div class="section7-box-1">
+                    Jasa<br>Facebook Ads
+                </div>
+                <div class="section7-box-2">
+                    Jasa<br>Google Ads
+                </div>
+                <div class="section7-box-3">
+                    Jasa Pembuatan<br>Landing Page dan Website
+                </div>
+                <div class="section7-box-4">
+                    Jasa <br>Kelola Website
+                </div>
+                <div class="section7-box-5">
+                    Jasa<br>Kelola Instagram
+                </div>
+                <div class="section7-box-6">
+                    Kursus Digital Marketing<br>JLD Academy
+                </div>
+            </div>
+
+                <a class="button" href="https://api.whatsapp.com/send?phone=6287700231999&text=Hi kak, saya berminat dengan Jasa All In One Digital Marketing di JLD Agency. Mohon informasinya..">Pesan Sekarang</a>
+
+            <div class="section8">
+                <h1>Portofolio<br>Facebook Ads</h1>
+                <div class="section6-grid">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658296712/JLD/4-1.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658296715/JLD/3-1.webp" alt="">
+                </div>
+            </div>
+
+            <div class="section9">
+                <h1>Portofolio<br>Google Ads</h1>
+                <div class="section6-grid">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658298413/JLD/23.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658298421/JLD/22.webp" alt="">
+                </div>
+            </div>
+
+            <div class="section10">
+                <h1>Portofolio<br>Landing Page</h1>
+                <div class="section10-grid">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658298728/JLD/LP4.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658298727/JLD/LP6.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658298727/JLD/LP5.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658298727/JLD/LP2.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658298727/JLD/LP3.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658298727/JLD/LP1.webp" alt="">
+                </div>
+            </div>
+
+            <div class="section11">
+                <h1>Portofolio<br>Website</h1>
+                <div class="section6-grid">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658300694/JLD/web3.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658300770/JLD/web2.webp" alt="">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658300770/JLD/web1.webp" alt="">
+                </div>
+            </div>
+
+            <div class="section12">
+                <h1>Portofolio<br>Feed Instagram</h1>
+                <div class="section10-grid">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658301817/JLD/kelola-ig.webp" alt="">
+                </div>
+            </div>
+
+            <div class="section13">
+                <h2>Deretan Klien yang Bekerja sama di</h2>
+                <h1>JLD Digital Agency</h1>
+                <div class="section10-grid">
+                    <img src="https://res.cloudinary.com/ddv/image/upload/v1658302028/JLD/klien.webp" alt="">
+                </div>
+            </div>
+
+            <div class="section15">
+                <p>Kami siap menjadi partner</p>
+                <h2>DIGITAL MARKETING</h2>
+                <p>Untuk meningkatkan<br>Bisnis Anda</p>
+                <h3>Jangan Buang Waktu<br>Untuk Ini Itu, Klik Tombol<br>Dibawah Ini Sekarang Juga</h3>
+            </div>
+
+            <a class="button" href="https://api.whatsapp.com/send?phone=6287700231999&text=Hi kak, saya berminat dengan Jasa All In One Digital Marketing di JLD Agency. Mohon informasinya..">Hubungi Kami Disini</a>
+
+        </div>
+        <div class="section14">
+            <h1>F.A.Q<br>Frequently Asked Question</h1>
+
+            <button class="accordion">Lokasinya Dimana?</button>
+            <div class="panel">
+                <p>Kami berlokasi di Kawasan Bisnis Dlingo Digital Valley Pencitrejo, Terong, Dlingo, Bantul Regency, Special Region of Yogyakarta 55783.</p>
+            </div>
+
+            <button class="accordion">Berapa Biaya yang Harus Dibayarkan?</button>
+            <div class="panel">
+                <p>Untuk biayanya sendiri disesuaikan dengan fitur & tingkat kesulitan aplikasi</p>
+            </div>
+
+            <button class="accordion">Berapa Lama Waktu Pengerjaannya?</button>
+            <div class="panel">
+                <p>Proses pengerjaannya sendiri menyesuaikan dengan detail, kompleksitas, & budget. Bisa dipercepat prosesnya jika dibutuhkan.</p>
+            </div>
+
+        </div>
+            
+        
+        </div>
+
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=6287700231999&text=Hi kak, saya berminat dengan Jasa All In One Digital Marketing di JLD Agency. Mohon informasinya.." class="float" target="_blank">
+                <img src="https://res.cloudinary.com/ddv/image/upload/v1658302863/JLD/icon-wa.png" class="my-float" alt="">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+    </footer>
+</div>
+    
+</body>
+</html>
